@@ -1,0 +1,47 @@
+$find-banner-prefix-cls: find-banner;
+
+.#{$find-banner-prefix-cls} {
+  position: relative;
+  padding-top: 16px;
+  & &__bg {
+    position: absolute;
+    top: 0;
+    height: 80%;
+    width: 100%;
+    background: #DB3E35;
+  }
+
+  & &__nav {
+    position: relative;
+    width: 88.8888888%;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  & &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  & &__title {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 4px 8px;
+    border-top-left-radius: 8px;
+    color: white;
+    font-size: 12px;
+    line-height: 12px;
+    background: #DB3E35;
+    &--blue {
+      background: #3485C6;
+    }
+  }
+  /* 改变轮播的样子 */
+  & .swiper-pagination {
+    bottom: 4px;
+  }
+  & .swiper-pagination-bullet-active {
+    background: #DB3E35;
+  }
+}
