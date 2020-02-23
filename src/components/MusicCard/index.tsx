@@ -2,7 +2,7 @@ import React from 'react'
 import LazyLoad from "react-lazyload";
 import { FiPlay } from "react-icons/fi";
 import './music_card.scss'
-import { disposePlayCount } from '../../../utils';
+import { disposePlayCount } from '../../utils';
 interface MusicCardProps {
   style?: React.CSSProperties
   coverImg: string
@@ -56,4 +56,4 @@ const MusicCard: React.FC<MusicCardProps> = (props) => {
   )
 }
 
-export default MusicCard
+export default React.memo(MusicCard)

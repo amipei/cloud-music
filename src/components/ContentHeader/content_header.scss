@@ -1,0 +1,39 @@
+$content-header-prefix-cls: content-header;
+
+
+.#{$content-header-prefix-cls} {
+
+  & &__title {
+    font-size: 12px;
+    font-weight: 400;
+    color: #B3B3B3;
+  }
+  & &__sub-title {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  & &__sub-heading {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  /* 按钮 */
+  & &__btn {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    border: 1px solid #EFEFEF;
+    border-radius: 10px;
+    padding: 2px 8px;
+       
+    font-size: 12px;
+    line-height: 12px;
+
+    background: white;
+    outline: none;
+  
+    &:active {
+      background: #EFEFEF;
+    }
+  }
+}
