@@ -1,0 +1,47 @@
+$top-header-prefix-cls: top-header;
+
+.#{$top-header-prefix-cls} {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  height: 56px;
+  color: white;
+  background: #D63C32;
+  
+
+  & &__menu {
+    height: 48px;
+    margin-left: -12px;
+    padding: 12px;
+    font-size: 24px;
+
+  }
+  & &__search {
+    height: 48px;
+    margin-left: auto;
+    margin-right: -12px;
+    padding: 12px;
+    font-size: 24px;
+
+  }
+  & &__tab {
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    flex: 1;
+  }
+  & &__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #E78A85;
+    transition: all .1s;
+    &--active {
+      font-size: 20px;
+      font-weight: 500;
+      color: #f1f1f1;
+    }
+  }
+}

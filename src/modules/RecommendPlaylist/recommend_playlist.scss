@@ -1,0 +1,16 @@
+$recommend_playlist-prefix-cls: recommend-playlist;
+
+
+.#{$recommend_playlist-prefix-cls} {
+  margin-top: 20px;
+  padding: 0 16px;
+  overflow: hidden;
+
+  /* 轮播设置 */
+  & .swiper-container {
+    overflow: initial;
+  }
+  & .swiper-slide {
+    width: 100px;
+  }
+}
